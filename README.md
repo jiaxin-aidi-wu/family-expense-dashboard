@@ -53,3 +53,10 @@ python app.py
 
 一个最小可用的家庭支出看板就完成了✅
 ✅ The MVP of the family expense dashboard is done!
+
+## 📸 截图预览 Screenshots
+
+示例图如下（Example view）：
+
+![家庭支出看板截图](example.png)
+
