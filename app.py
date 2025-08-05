@@ -103,7 +103,7 @@ def update_dashboard(n):
     monthly_fig.add_hline(y=MAX_BUDGET, line_dash="dash", line_color="red", annotation_text="最大预算")
     monthly_fig.update_xaxes(title_text='月份', title_standoff=10)
 
-    # 堆叠柱状图（只标记最上层）
+    # 堆叠柱状图
     payer_df = df.groupby(['支付人', '分类'])['金额'].sum().reset_index()
     total_per_payer = df.groupby('支付人')['金额'].sum().reset_index()
     total_per_payer.rename(columns={'金额': '总计'}, inplace=True)
